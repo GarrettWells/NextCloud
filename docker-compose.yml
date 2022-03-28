@@ -23,7 +23,7 @@ services:
       - nextcloud:/var/www/html
     environment:
       - VIRTUAL_HOST=${NEXTCLOUD_DOMAIN}
-      - LETSENCRYPT_HOST=${LETSENCRYPT_DOMAIN}
+      - LETSENCRYPT_HOST=${NEXTCLOUD_DOMAIN}
       - LETSENCRYPT_EMAIL=${LETSENCRYPT_EMAIL}
       - MYSQL_HOST=db
       - REDIS_HOST=redis
